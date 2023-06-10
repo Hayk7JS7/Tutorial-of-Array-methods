@@ -87,7 +87,7 @@ console.log(optimisedCode);
 // we are using filter when we want to filter somthing in an array
 // for example here we want to find odd elemets in an array
 const b2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const b3 = b2.filter(function(item){
+const b3 = b2.filter(function(item){  // in a straightforward way: .filter(item => item % 2 !== 0) 
     if(item % 2 !== 0){
         return true;
     }
@@ -97,7 +97,7 @@ console.log(b3);
 // example of filter method
 const n = [-3, 1, 8, -5, 6, 7, 2, -3, 43, -4, 5, 345, -34, -5423, 43, 0];
 
-let n1 = n.map(function(item){
+let n1 = n.map(function(item){  
     if(item > -1){
     return item;
     }
@@ -120,28 +120,11 @@ const debts = clients.filter(function(item){
     if(item.debt > 500){
         return item;
     }
-}).sort(function(a, b){
+}).sort(function(a, b){  // in a straightforward way: .sort((a, b) => b.debt - a.debt);
    return b.debt - a.debt; 
-});
+}); 
 console.log(debts);
 
 // sort method is used for sorting 
 // if you want to know deatails of sorting please click for this link
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
